@@ -50,6 +50,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -95,15 +96,35 @@ h1 {
   color: white;
   -webkit-text-stroke: 5px black;
   text-shadow: 8px 8px black;
-  
-  > span:first-of-type {
+
+  >span:first-of-type {
     font-size: .75em;
   }
-  
-  > div {
+
+  >div {
     display: flex;
     gap: .5ch;
   }
+}
+
+#grids {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  transform-origin: top left;
+  transition: transform .3s ease;
+}
+
+.donor-box {
+  border: 1px solid transparent;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  background-color: #bfbfbf;
+  position: relative;
 }
 
 @layer base {
